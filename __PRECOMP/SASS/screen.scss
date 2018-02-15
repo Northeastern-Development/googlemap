@@ -1,0 +1,78 @@
+/* ***********************************************************
+## CSS reset
+*********************************************************** */
+@import "mixins/reset";
+
+
+
+
+
+/* ***********************************************************
+## FONTS
+*********************************************************** */
+@import "mixins/fonts"; 
+
+
+
+
+
+
+
+/* ***********************************************************
+## VARIABLES
+*********************************************************** */
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: 0;
+    color: rgba(0,0,0,1.0);
+}
+
+
+html,
+body{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+html{
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-vertical;
+}
+
+h1,h2,h3{
+    margin: 0 0 5% 0;
+}
+
+
+h1{
+    font-size: 6rem;
+}
+
+
+h2{
+    font-size: 4rem;
+}
+
+
+h3{
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+p{
+    color: rgba(104, 104, 104, 1.0);
+    font-size: 2rem;
+    line-height: 2.7rem;
+    margin: 0 0 5% 0;
+}

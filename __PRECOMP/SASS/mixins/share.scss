@@ -1,0 +1,37 @@
+.entypo-socialbuttons {
+	/*width: 33%;
+	height: 60px;*/
+	font-size: 5rem; 
+	text-align: center;
+	background-color: transparent;
+	color: rgba(0,0,0,1.0);
+	display: inline-block;
+	margin: 0 5% 5% 0;
+	&:hover {
+		color: rgba(255,0,0,1.0);
+	}
+}
+
+.entypo-facebook:before{
+	content: "\f30c";
+}
+
+.entypo-twitter:before{
+	content: "\f309";
+}
+
+.entypo-linkedin:before{
+	content: "\f318";
+}
+
+.entypo-gplus:before{
+	content: "\f30f";
+}
+
+.entypo-stumbleupon:before{
+	content: "\f31e";
+}
+
+[class*="entypo-"]:before{
+	font-family: entypo, sans-serif;
+}

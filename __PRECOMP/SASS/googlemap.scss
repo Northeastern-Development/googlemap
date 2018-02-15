@@ -1,0 +1,381 @@
+div.neo__map-container{
+  overflow: hidden;
+  width: 100vw;
+  height: 95vh;
+  position: relative;
+  & > ul{
+      list-style-type: none;
+      list-style: none;
+      position: absolute;
+      z-index: 500;
+      bottom: 2vw;
+      right: 1.5vw;
+      & > li{
+          display: inline-block;
+          height: 3vw;
+          width: auto;
+          padding: 0 0.5vw 0 0.5vw;
+          margin: 0 0 0 0.5vw;
+          background: rgba(0,0,0,0.5);
+          text-align: left;
+          line-height: 3vw;
+          color: #fff;
+          font-size:16px;
+          &.active{
+            background: rgba(0,0,0,1.0);
+          }
+          &:hover{
+              cursor: pointer;
+              background: rgba(0,0,0,1.0);
+          }
+      }
+      &.combined{ /* if we are dealing with the combined level and cat navigation */
+        top: 1.5vw;
+        & > li{
+          display: block;
+          width: 15vw;
+          overflow: hidden;
+          padding: 0 0 0 0;
+          margin: 0 0 0 0;
+          height: 2vw;
+          line-height: 2vw;
+          &.active{
+            background: rgba(41, 96, 29, 1.0);
+            height: auto;
+
+          }
+          & > div.neo__map-categorynav{
+            top: 0;
+            position: relative;
+            //left:1vw;
+          }
+          & p{
+            height: auto;
+            overflow: hidden;
+            margin: 0 0 0 1vw;
+            color:#fff;
+            text-transform: capitalize;
+          }
+        }
+      }
+  }
+  div.neo__map-categorynav{
+      display: none;
+      position: absolute;
+      z-index: 500;
+      width: 20vw;
+      height: auto;
+      top: 2vw;
+      right: 1.5vw;
+      &[class*=combined]{ /* if we are dealing with the combined level and cat navigation */
+        position: relative;
+        width: 100%;
+        right: 0;
+        & > ul{
+          & > li{
+            width: 100%;
+            background: rgba(0,0,0,1.0);
+            height: 2vw;
+            & > h2,
+            h3{
+              font-size: 1.5vh;
+              line-height: 2vw;
+              margin: 0 0 0 1vw;
+              &.neo__category-Academic{
+                &:hover {
+                  color: rgba(205,0,0,1.0);
+                }
+                &.active {
+                  color: rgba(205,0,0,1.0);
+                }
+              }
+              &.neo__category-Residence {
+                &:hover {
+                  color: rgba(9, 103, 172, 1.0);
+                }
+                &.active {
+                  color: rgba(9, 103, 172, 1.0);
+                }
+              }
+              &.neo__category-Parking {
+                &:hover {
+                  color: rgba(146, 58, 132, 1.0);
+                }
+                &.active {
+                  color: rgba(146, 58, 132, 1.0);
+                }
+              }
+            }
+            & > div{
+              & ol{
+                margin: 0 0 0 1.5vw;
+                & li{
+                  margin: 0 0 0 0;
+                  color:#fff;
+                  line-height:2.2em;
+                  &.clickedme{
+                    color: rgba(144, 144, 144, 1.0);
+                    text-decoration: none;
+                  }
+                }
+                &.nolist{
+                    height: 2vw;
+                }
+              }
+              & ul{
+                & li{
+
+                }
+              }
+            }
+            &.nolist{
+                height: 2vw;
+            }
+          }
+        }
+      }
+      & > ul{
+          list-style-type: none;
+          list-style: none;
+          width: inherit;
+          height: auto;
+          display: none;
+          & > li{
+              background: rgba(255,0,0,1.0);
+              height: 3vw;
+              overflow: hidden;
+              display: block;
+//                    margin: 0;
+              & > h2,
+              h3{
+                  font-size: 2vh;
+                  width: inherit;
+                  line-height: 3vw;
+                  color: rgba(255,255,255,1.0);
+                  margin: 0 0 0 1vw;
+                  &:hover{
+                      cursor: pointer;
+                      color: rgba(0,255,0,1.0);
+                  }
+                  &.active{
+                      color: rgba(0,255,0,1.0);
+                  }
+              }
+              & > h3{
+                font-size: 1vh;
+              }
+              &.neo__toggle{
+                &.active{
+                  height: auto;
+                }
+              }
+              /*&.neo__toggle{
+                color: #fff;
+                padding: 1vw 0 0 1vw;
+                font-size: 1vh;
+                &:hover{
+                    cursor: pointer;
+                    color: rgba(0,255,0,1.0);
+                }
+              }*/
+              & > div{
+                  position: relative;
+                  height: auto;
+                  max-height: 15vh;
+                  & ol{
+                      margin: 1vw 0 0 1vw;
+                      list-style-position: inside;
+                      & li{
+                          margin: 0 0 1vh 0;
+                          &.clickedme{
+                              color: rgba(144, 144, 144, 1.0);
+                              text-decoration: none;
+                          }
+                          &:hover{
+                              cursor: pointer;
+                              color: rgba(144, 144, 144, 1.0);
+                          }
+                      }
+                      &.nolist{
+                          height: 3vh;
+                          overflow-y: hidden;
+                      }
+                  }
+
+                  & ul{
+                    margin: 0 0 0 1vw;
+                    list-style-type: none;
+                    list-style: none;
+                    & li{
+                        margin: 0 0 1vh 0;
+                        & span{
+                          display: inline-block;
+                          color:#fff;
+                          &:nth-of-type(1){
+                            height: 1vh;
+                            width: 3vw;
+                            background: blue;
+                            margin: 0 1vw 0 0;
+                          }
+                        }
+
+                    }
+                  }
+              }
+              &.open{
+                  height: auto;
+                  max-height: 22vh;
+              }
+              &.nolist{
+                  height: 3vw;
+                  overflow-y: hidden;
+              }
+          }
+      }
+  }
+  & > #showmap{
+      width: 100vw;
+      height: 100vh;
+      background: rgba(229, 227, 223, 1.0);
+  }
+}
+
+#streetviewcontainer{
+  position: absolute;
+  z-index: 9000;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,1.0);
+  display: none;
+  & .close{
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    z-index: 9000;
+    background: rgba(255,0,0,0.5);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    &:hover{
+      background: rgba(255,0,0,1.0);
+      cursor: pointer;
+    }
+  }
+}
+
+
+.neo__map-marker{
+    font-size: 12px;
+    text-align: center;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+    &.academicservicebuildings {
+      background: rgba(205,0,0,1.0);
+      border-radius: 50% 50%;
+      font-size: 1.2vh;
+      color: rgba(255,255,255,1.0);
+    }
+    &.residence {
+      background: rgba(9, 103, 172, 1.0);
+      border-radius: 50% 50%;
+      font-size: 1.2vh;
+      color: rgba(255,255,255,1.0);
+    }
+    &.parking {
+      background: rgba(146, 58, 132, 1.0);
+      border-radius: 50% 50%;
+      font-size: 1.2vh;
+      color: rgba(255,255,255,1.0);
+    }
+    // &.redcircle{
+    //     background: #f00;
+    //     border-radius: 50% 50%;
+    //     font-size: 1.5vh;
+    //     border: solid rgba(0,255,0,1.0) 2px;
+    // }
+    // &.bluecircle{
+    //     background: #00f;
+    //     border-radius: 50% 50%;
+    //     font-size: 1.5vh;
+    // }
+    &.background{
+        background: url(../_ui/maps/mapmarker.png);
+    }
+    // &.redtext{
+    //     color: #f00;
+    //     width: 10vw;
+    //     text-align: center;
+    //     font-size: 1.5vh;
+    //     font-weight: bold;
+    // }
+    // &.singlemarkertest{
+    //   border: solid green 10px;
+    // }
+    // &.singlemarkertest2{
+    //   border: solid yellow 5px;
+    // }
+}
+
+.neo__map-markerinfo{
+    margin: 1vh;
+    width: 10vw;
+    height: auto;
+    overflow: hidden;
+    & > h1{
+        font-size: 1.5vh;
+        margin: 0;
+    }
+    & > p{
+        margin: 0.75vh 0 0 0;
+        font-size: 1.5vh;
+        line-height: 2vh;
+    }
+}
+
+
+
+
+//Trents
+#nu__campuses {
+  position:absolute;
+  bottom:0;
+  right:1.5vw;
+  width:27vw;
+  height:5vh;
+  background:#000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & p {
+    float:left;
+    font-size: calc(.25vw + .25vh + .5vmin);
+    color:#fff;
+  }
+  & ul {
+    & li {
+      display:inline-block;
+      font-size: calc(.2vw + .2vh + .5vmin);
+      margin:0 15px 0 0;
+      & a {
+        color:#fff;
+        &:hover {
+          color: rgba(144, 144, 144, 1.0);
+        }
+        &.active {
+          color: rgba(255,0,0,1.0);
+        }
+      }
+      &:first-child {
+        margin-left:30px;
+      }
+      &:last-child {
+        margin-right:0;
+      }
+    }
+  }
+}

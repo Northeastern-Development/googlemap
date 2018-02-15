@@ -1,0 +1,1 @@
+$(window).load(function(){var a={location:["mapsconfig-seattle","mapsdata-seattle"]};configMap(a.location)});

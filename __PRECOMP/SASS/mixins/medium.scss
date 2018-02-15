@@ -1,0 +1,151 @@
+@media screen and (max-width: 960px) {
+  
+    
+    
+    
+    
+
+
+#neo__gallery-container{
+    & > div.magnific-gallery{
+        & > div{
+            & > div{
+                font-size: 1.0rem;
+                line-height: 2.5rem;
+            }
+        }      
+    }
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    footer{
+        & > div{
+            float: none;
+            width: 100%;
+            &:nth-child(1){
+                & p{
+                    padding: 0 0 1% 0;
+                    text-align: center;
+                }
+            }
+            &:nth-child(2){
+                text-align: center;
+                & div{
+                    padding: 0 0 0 0;
+                }
+            }
+        } 
+    }
+    
+    
+    
+    
+}
+
+
+
+@media screen and (max-width: 720px) {
+  
+    
+    
+    
+    
+    $headerSize: (100%,auto);          // width,height
+    $mainNavSize: (100%,30%);          // width,height
+
+    header{
+        height: nth($headerSize,2);
+        overflow: visible;
+        & img{
+            margin: 0 0 0 0;
+            width: 50%;
+            height: auto;
+        } 
+    }
+
+    header > nav{
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        & > div{
+            position: absolute;
+            display: block;
+            height: 50%;
+            width: 50%;
+            background: rgba(255,0,0,1.0);
+            text-align: center;
+            top: 25%;
+            right: 10%;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        & > ul{
+            position: absolute;
+            z-index: -1;
+            top: -250%;
+            right: 0;
+            height: 100%;
+            &:first-child{
+                margin: 0 0 0 0;
+            }
+            & > li{
+                display: list-item;
+                float: right;
+                padding: 5% 15% 5% 0;
+                margin: 0 0 0 0;
+                font-size: 1.5rem;
+                width: 93%;
+            }
+        }
+    }
+    
+    
+    div.neo__content-container{
+        & > section#contact{
+            div:first-child{
+                width: 100%;
+                height: auto;
+                float: none;
+                margin: 0 0 0 0;
+            }        
+            div:last-child{
+                float: none;
+                width: 100%;
+            }       
+            &:nth-of-type(even){            
+                div:first-child{
+                    float: none;
+                    margin: 0 0 0 0;
+                }
+                div:last-child{
+                    float: none;
+                    margin: 0 0 0 0;
+                }            
+            } 
+        }
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

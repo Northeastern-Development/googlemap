@@ -1,0 +1,1 @@
+$(window).load(function(){var o={location:["mapsconfig-boston","mapsdata-boston"]};configMap(o.location)});

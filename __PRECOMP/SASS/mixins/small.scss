@@ -1,0 +1,156 @@
+@media screen and (max-width: 640px) {
+  
+    
+    
+    
+   p{
+        color: rgba(104, 104, 104, 1.0);
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+    }
+    
+    
+    
+    
+    
+    div.neo__content-container{
+        margin: (nth($headerSize,2) + 5) 5% (nth($headerSize,2) + 5) 5%;
+        & > section{
+            margin: 0 0 20% 0;
+            div:first-child{
+                width: 100%;
+                height: auto;
+                float: none;
+                margin: 0 0 0 0;
+            }        
+            div:last-child{
+                float: none;
+                width: 100%;
+            }        
+            div img{
+                width: 100%;
+                margin: 0 0 2rem 0;
+            }        
+            &:nth-of-type(even){            
+                div:first-child{
+                    float: none;
+                    margin: 0 0 0 0;
+                }
+                div:last-child{
+                    float: none;
+                    margin: 0 0 0 0;
+                }            
+            }
+        }
+
+
+        & > ul{
+            width: 100%;
+            & > li{
+                float: none;
+                width: 100%;
+                margin: 0 0 5% 0;
+                &:last-child{
+                    margin: 0 0 0 0;   
+                }
+            }
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    #neo__gallery-container{
+        width: 100%;
+        & > ul#neo__gallery-filter{
+            margin: 0 0 5% 0;
+            font-size: 2rem;
+            & > li{
+                float: none;
+                position: relative;
+                display: inline;
+                background: none;
+                width: auto;
+                margin: 0 0 0 0;
+                &.filteroption{
+                    &:hover{
+                        cursor: pointer;
+                        color: rgba(255,0,0,1.0);
+                        text-decoration: underline;
+                    }
+                    &.active{
+                        color: rgba(255,0,0,1.0);
+                    }
+                }
+            }
+        }
+        & > div.magnific-gallery{
+            & > div{
+                width: 47.5%;
+                margin: 0 5% 5% 0;
+
+                &:last-child{
+                    margin: 0 5% 10% 0;
+                }
+                &:nth-of-type(2n+0){
+                    margin: 0 0 5% 0;
+                }
+                & > div{    // this is the caption
+                    font-size: 1rem;
+                    line-height: 2rem;
+                }
+            }  
+        }
+    }
+    
+    
+    /*footer{
+        position: relative;
+    }*/
+    
+    
+    
+}
+
+
+@media screen and (max-width: 460px) {
+  
+    
+    
+    
+   
+    
+    
+    
+    
+    
+    /*div.neo__content-container{
+        
+        & > section#contact{
+            p{
+                float: none;
+                width: 100%;
+                margin: 5% 0 0 0;
+                text-align: center;
+            }
+        }
+
+
+       
+    }*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

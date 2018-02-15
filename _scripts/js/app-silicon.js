@@ -1,0 +1,1 @@
+$(window).load(function(){var o={location:["mapsconfig-silicon","mapsdata-silicon"]};configMap(o.location)});

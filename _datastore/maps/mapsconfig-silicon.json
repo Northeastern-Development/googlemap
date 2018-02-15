@@ -1,0 +1,46 @@
+{
+  "config":{
+    "apikey":"AIzaSyC3sPM8GuBe2eWOlG8pTT3mZCRjdoWktao",
+    "target":"showmap",
+    "navtarget":".neo__map-container",
+    "combinenav":true,
+    "pinchzoom":false,
+    "showscale":false,
+    "mapcenter":{
+      "lat":37.256753,
+      "lng":-121.785842
+    },
+    "dragbounds":{
+      "allowdragging":true,
+      "northeast":{"lat":42.3885403,"lng":-70.9259109},
+      "southwest":{"lat":42.282006,"lng":-71.1775574}
+    },
+    "zooms":{
+      "city":14,
+      "campus":17,
+      "start":"campus"
+    }
+  },
+  "styling":{
+    "maptype":"roadmap",
+    "terraintoggle":false,
+    "mylocation":true,
+    "ringstoggle":{"show":true,"title":"Walk"},
+    "showtransit":false,
+    "flags":"both",
+    "polykey":false,
+    "customstyle":true,
+    "streetview":false,
+    "markersizes":{
+      "campus":[20,20],
+      "city":[40,40]
+    },
+    "startmarker":{
+      "label":"Northeastern University Silicon Valley",
+      "position":{
+        "lat":37.256753,
+        "lon":-121.785842
+      }
+    }
+  }
+}

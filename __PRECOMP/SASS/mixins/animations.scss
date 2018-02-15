@@ -1,0 +1,43 @@
+/* ***********************************************************
+## ANIMATIONS
+*********************************************************** */
+
+
+// set up various transition speeds
+.transition_05s_easinout{
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.transition_1s_easinout{
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+
+
+// animate the nav when in portrait mode or a mobile device
+nav.js_navigation-container ul{
+    &.animateinout{
+        -webkit-transform: translate(0,350%);
+        -moz-transform: translate(0,350%);
+        -o-transform: translate(0,350%);
+        -ms-transform: translate(0,350%);
+        transform: translate(0,350%);
+    } 
+}
+
+
+// this is the class that will get added to animate the back to top in and out
+.js_backtotop{
+    &.animateinout{
+        -webkit-transform: translateX(-130px);
+        -moz-transform: translateX(-130px);
+        -o-transform: translateX(-130px);
+        -ms-transform: translateX(-130px);
+        transform: translateX(-130px);
+    } 
+}

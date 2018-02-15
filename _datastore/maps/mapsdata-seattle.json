@@ -1,0 +1,66 @@
+{
+  "levels":{
+    "campus":{
+      "center":{"lat":47.622641,"lon":-122.337499},
+
+      "timerings":{
+        "center":{"lat":47.622641,"lon":-122.337499},
+        "rings":{
+          "10_min":{
+            "label":"10 Minutes",
+            "strokeColor":"#0000FF",
+            "strokeOpacity": 0.5,
+            "strokeWeight": 5,
+            "fillOpacity": 0.25,
+            "radius": 0.4,
+            "dashed":[true,0,20]
+          },
+          "5_min":{
+            "label":"5 Minutes",
+            "strokeColor":"#00FF00",
+            "strokeOpacity": 0.5,
+            "strokeWeight": 5,
+            "fillColor":"#00FF00",
+            "fillOpacity": 0.25,
+            "radius": 0.3
+          }
+        }
+      },
+
+      "categories":{
+
+        "Academic &amp; Service Buildings":{
+          "class":"academicservicebuildings",
+          "description":"",
+          "markers":{
+
+          }
+        },
+        "Residence Buidings":{
+          "class":"residence",
+          "description":"",
+          "markers":{
+
+          }
+        },
+        "Parking Garages":{
+          "class":"parking",
+          "description":"",
+          "markers":{
+
+          }
+        }
+      }
+    },
+    "city":{
+      "center":{"lat":47.622641,"lon":-122.337499},
+      "class":"redcircle",
+      "markers":{
+
+
+      }
+
+    }
+
+  }
+}
